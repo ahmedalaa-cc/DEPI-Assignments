@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="email">Email:</label><br>
+        <input type="email"
+               id="email"
+               name="email"
+               required
+               pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}"
+               aria-describedby="emailHelp"
+               aria-invalid="false">
+        <p id="emailHelp">Enter a valid email address</p>
+
+        <br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel"
+               id="phone"
+               name="phone"
+               required
+               pattern="[0-9]{11}"
+               aria-describedby="phoneHelp"
+               aria-invalid="false">
+        <p id="phoneHelp">Enter 11-digit phone number</p>
+
+        <br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required>
+
+        <br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
