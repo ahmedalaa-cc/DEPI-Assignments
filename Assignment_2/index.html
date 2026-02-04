@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <i class="fas fa-sun"></i> Weather Now
+            </div>
+            <button>
+                <i class="fas fa-cog"></i> Units
+            </button>
+        </header>
+        <section class="search-section">
+            <h1>How's the sky looking today?</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for a place...">
+                <button>Search</button>
+            </div>
+        </section>
+
+        <div class="dashboard-flex">
+            <div class="left-panel">
+                <div class="main-card">
+                    <div>
+                        <h2>Berlin, Germany</h2>
+                        <p>Tuesday, Aug 5, 2025</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-sun"></i>
+                        <span>20°</span>
+                    </div>
+                </div>
+                <div class="stats-container">
+                    <div>
+                        <span>Feels Like</span>
+                        <span>18°</span>
+                    </div>
+                    <div>
+                        <span>Humidity</span>
+                        <span>46%</span>
+                    </div>
+                    <div>
+                        <span>Wind</span>
+                        <span>14 km/h</span>
+                    </div>
+                    <div>
+                        <span>Precipitation</span>
+                        <span>0 mm</span>
+                    </div>
+                </div>
+                <div class="daily-container">
+                    <h3>Daily forecast</h3>
+                    <div class="days-list">
+                        <div>
+                            <span>Tue</span> <i class="fas fa-cloud-rain"></i> <span>20°</span>
+                        </div>
+                        <div>
+                            <span>Wed</span> <i class="fas fa-cloud"></i> <span>21°</span>
+                        </div>
+                        <div>
+                            <span>Thu</span> <i class="fas fa-sun"></i> <span>24°</span>
+                        </div>
+                        <div>
+                            <span>Fri</span> <i class="fas fa-cloud-sun"></i> <span>25°</span>
+                        </div>
+                        <div>
+                            <span>Sat</span> <i class="fas fa-bolt"></i> <span>21°</span>
+                        </div>
+                        <div>
+                            <span>Sun</span> <i class="fas fa-cloud"></i> <span>25°</span>
+                        </div>
+                        <div>
+                            <span>Mon</span> <i class="fas fa-wind"></i> <span>24°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="hourly-header">
+                    <h3>Hourly forecast</h3>
+                    <span>Today</span>
+                </div>
+                
+                <div class="hourly-list">
+                    <div>
+                        <i class="fas fa-cloud"></i> 3 PM <span>20°</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-cloud-sun"></i> 4 PM <span>20°</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-sun"></i> 5 PM <span>20°</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-cloud"></i> 6 PM <span>19°</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-cloud-rain"></i> 7 PM <span>18°</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-water"></i> 8 PM <span>18°</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-moon"></i> 9 PM <span>17°</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-moon"></i> 10 PM <span>17°</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
