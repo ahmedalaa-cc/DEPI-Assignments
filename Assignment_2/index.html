@@ -10,75 +10,117 @@
 </head>
 <body>
     <div class="container">
+        
         <header>
-            <div>
-                <i class="fas fa-sun"></i> Weather Now
+            <div class="header-top">
+                <div class="logo">
+                    <i class="fas fa-sun"></i> Weather Now
+                </div>
+                <button class="units-btn">
+                    <i class="fas fa-cog"></i> Units
+                </button>
             </div>
-            <button>
-                <i class="fas fa-cog"></i> Units
-            </button>
+
+            <section class="search-section">
+                <h1>How's the sky looking today?</h1>
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search for a place...">
+                    <button>Search</button>
+                </div>
+            </section>
         </header>
-        <section class="search-section">
-            <h1>How's the sky looking today?</h1>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for a place...">
-                <button>Search</button>
-            </div>
-        </section>
 
         <div class="dashboard-flex">
             <div class="left-panel">
                 <div class="main-card">
-                    <div>
-                        <h2>Berlin, Germany</h2>
-                        <p>Tuesday, Aug 5, 2025</p>
+                    <div class="location-info">
+                        <h2>Cairo, Egypt</h2>
+                        <p>Wendesday, Feb 4, 2026</p>
                     </div>
-                    <div>
+                    <div class="weather-icon">
                         <i class="fas fa-sun"></i>
                         <span>20°</span>
                     </div>
                 </div>
+
                 <div class="stats-container">
-                    <div>
+                    <div class="stat-box">
                         <span>Feels Like</span>
                         <span>18°</span>
                     </div>
-                    <div>
+                    <div class="stat-box">
                         <span>Humidity</span>
                         <span>46%</span>
                     </div>
-                    <div>
+                    <div class="stat-box">
                         <span>Wind</span>
                         <span>14 km/h</span>
                     </div>
-                    <div>
+                    <div class="stat-box">
                         <span>Precipitation</span>
                         <span>0 mm</span>
                     </div>
                 </div>
+
                 <div class="daily-container">
                     <h3>Daily forecast</h3>
                     <div class="days-list">
                         <div>
-                            <span>Tue</span> <i class="fas fa-cloud-rain"></i> <span>20°</span>
+                            <span class="day-name">Tue</span>
+                            <i class="fas fa-cloud-rain"></i>
+                            <div class="daily-temps">
+                                <span class="max">20°</span>
+                                <span class="min">14°</span>
+                            </div>
                         </div>
                         <div>
-                            <span>Wed</span> <i class="fas fa-cloud"></i> <span>21°</span>
+                            <span class="day-name">Wed</span>
+                            <i class="fas fa-cloud"></i>
+                            <div class="daily-temps">
+                                <span class="max">21°</span>
+                                <span class="min">15°</span>
+                            </div>
                         </div>
                         <div>
-                            <span>Thu</span> <i class="fas fa-sun"></i> <span>24°</span>
+                            <span class="day-name">Thu</span>
+                            <i class="fas fa-sun"></i>
+                            <div class="daily-temps">
+                                <span class="max">24°</span>
+                                <span class="min">14°</span>
+                            </div>
                         </div>
                         <div>
-                            <span>Fri</span> <i class="fas fa-cloud-sun"></i> <span>25°</span>
+                            <span class="day-name">Fri</span>
+                            <i class="fas fa-cloud-sun"></i>
+                            <div class="daily-temps">
+                                <span class="max">25°</span>
+                                <span class="min">13°</span>
+                            </div>
                         </div>
                         <div>
-                            <span>Sat</span> <i class="fas fa-bolt"></i> <span>21°</span>
+                            <span class="day-name">Sat</span>
+                            <i class="fas fa-bolt"></i>
+                            <div class="daily-temps">
+                                <span class="max">21°</span>
+                                <span class="min">15°</span>
+                            </div>
                         </div>
                         <div>
-                            <span>Sun</span> <i class="fas fa-cloud"></i> <span>25°</span>
+                            <span class="day-name">Sun</span>
+                            <i class="fas fa-cloud"></i>
+                            <div class="daily-temps">
+                                <span class="max">25°</span>
+                                <span class="min">16°</span>
+                            </div>
                         </div>
                         <div>
-                            <span>Mon</span> <i class="fas fa-wind"></i> <span>24°</span>
+                            <span class="day-name">Mon</span>
+                            <i class="fas fa-wind"></i>
+                            <div class="daily-temps">
+                                <span class="max">24°</span>
+                                <span class="min">15°</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,7 +129,7 @@
             <div class="right-panel">
                 <div class="hourly-header">
                     <h3>Hourly forecast</h3>
-                    <span>Today</span>
+                    <span>Tuesday <i class="fas fa-chevron-down"></i></span>
                 </div>
                 
                 <div class="hourly-list">
